@@ -1,0 +1,63 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+.card::before {
+  content: "";
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  background: url("https://image.freepik.com/fotos-gratis/agitando-o-pincel-com-po-fucsia_23-2148208967.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.card {
+  text-align: center;
+  /* height: 100%; */
+  
+  
+}
+
+.card_img {
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  border: 2px solid #ffffff;
+}
+
+
+li {
+  margin: auto;
+}
+
+li {
+  width: 300px;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: black;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  
+}
