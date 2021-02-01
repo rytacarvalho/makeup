@@ -11,18 +11,22 @@ ul {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 26rem;
   height: 100vh;
   background: url(../img/background.jpg)  center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
+
 
 .card {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-items: center;
@@ -31,14 +35,16 @@ ul {
 
 .card_img {
   border-radius: 50%;
-  width: 170px;
-  margin: 80px 0 60px 0;
+  width: 10rem;
+  margin: 60px 0 40px 0;
   border: 2px solid #fff;
 }
 
 
 .card_buttons {
   display: flex;
+  width: 100%;
+  padding: 0 20px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -54,7 +60,21 @@ ul {
   width: 300px;
   margin-bottom: 20px;
   background-color: black;
-  /* backdrop-filter: blur(42px); */
+  /* backdrop-filter: blur(5px); */
   text-transform: uppercase;
 
+}
+
+@media (max-width: 400px) {
+  .card_img {
+    width: 9rem;
+    margin: 40px 0 40px 0;
+    
+  }
+
+  .card_buttons a {
+    width: 70vw;
+    margin-bottom: 20px;
+    background-color: black;
+  }
 }
