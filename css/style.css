@@ -13,7 +13,7 @@ ul {
 .container {
   max-width: 400px;
   height: 100vh;
-  background: url("https://image.freepik.com/fotos-gratis/agitando-o-pincel-com-po-fucsia_23-2148208967.jpg") center center;
+  background: url(../img/background.jpg)  center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
