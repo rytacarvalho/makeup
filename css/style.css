@@ -3,102 +3,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
   list-style: none;
 }
 
-
-
-.card::before {
-  content: "";
-  position: fixed;
-  display: table;
-  height: 100%;
-  width: 100%;
-  background: url("https://image.freepik.com/fotos-gratis/agitando-o-pincel-com-po-fucsia_23-2148208967.jpg");
+.container {
+  max-width: 400px;
+  height: 100vh;
+  background: url("https://image.freepik.com/fotos-gratis/agitando-o-pincel-com-po-fucsia_23-2148208967.jpg") center center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
-  text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 10px 0;
 }
 
 .card_img {
   border-radius: 50%;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  border: 2px solid #ffffff;
+  width: 170px;
+  margin: 80px 0 60px 0;
+  border: 2px solid #fff;
 }
 
 
-li {
-  margin: auto;
+.card_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-li {
-  width: 300px;
-  border-radius: 6px;
-  padding: 20px;
-  background-color: black;
-  margin-bottom: 20px;
-  border: 1px solid #fff;
-}
-
-li a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
+.card_buttons a {
   font-size: 1.2rem;
-}
+  text-decoration: none;
+  border: 1px solid ;
+  border-radius: 8px;
+  color: #fff;
+  padding: 15px 0;
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: black;
+  /* backdrop-filter: blur(42px); */
+  text-transform: uppercase;
 
-@media only screen and (max-width: 320px) {
-  .card::before {
-    content: "";
-    position: fixed;
-    display: table;
-    height: 100%;
-    width: 100%;
-    background: url("https://image.freepik.com/fotos-gratis/agitando-o-pincel-com-po-fucsia_23-2148208967.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-  }
-  
-  .card {
-    text-align: center;
-    
-  }
-  
-  .card_img {
-    border-radius: 50%;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 2px solid #ffffff;
-  }
-  
-  
-  li {
-    margin: auto;
-  }
-  
-  li {
-    width: 80vw;
-    border-radius: 6px;
-    padding: 20px;
-    background-color: black;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
-  }
-  
-  li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-  }
 }
